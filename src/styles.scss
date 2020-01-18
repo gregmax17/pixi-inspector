@@ -1,0 +1,56 @@
+.inspector-box {
+	position: absolute;
+	font-family: 'arial';
+	font-size: 14;
+	font-weight: normal;
+	z-index: 1;
+	margin: 0;
+	padding: 8;
+	width: 360;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.4);
+
+	h4 {
+		margin: 4px 0;
+		cursor: pointer;
+	}
+
+	dl {
+		margin: 0;
+		clear: left;
+
+		dt {
+			float: left;
+			clear: left;
+			padding: 2px 0;
+			width: 120px;
+		}
+
+		dd	{
+			float: left;
+			margin: 0;
+			width: 164px;
+
+			input { 
+				margin: 2px 0; 
+			}
+		}
+	}
+
+	select { 
+		width : 100%; 
+	}
+
+	// sortable tree
+	.sortable-tree {
+		.rstcustom__row {
+			padding: 0 5px 0 12px;
+		}
+		.rstcustom__rowContents {
+			padding: 0 5px 0 24px;
+		}
+		.rstcustom__collapseButton, .rstcustom__expandButton {
+			padding-left: 48px;
+		}
+	}	
+}

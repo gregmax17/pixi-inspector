@@ -1,0 +1,38 @@
+<html>
+	<head>
+			
+	</head>
+
+	<body style="background-color: #333">
+		<div id="inspector"></div>
+	</body>
+	<script src="https://pixijs.download/v5.2.0/pixi-legacy.min.js"></script>
+	<script>
+		let app = new PIXI.Application({ width: 512, height: 512 });
+		document.body.appendChild(app.view);
+
+		let g = new PIXI.Graphics();
+		g.beginFill(0xff0000).drawRect(0, 0, 100, 100).endFill();
+
+		let g1 = new PIXI.Graphics();
+		g1.beginFill(0x00ff00).drawRect(0, 0, 100, 100).endFill();
+		g1.x = g1.y = 50;
+
+		let g2 = new PIXI.Graphics();
+		g2.beginFill(0x0000ff).drawRect(0, 0, 100, 100).endFill();
+		g2.x = g2.y = 200;
+
+		g.addChild(g1);
+		g1.addChild(g2);
+
+		app.stage.addChild(g);
+
+		g.name = 'hello there';
+
+		window.pixiAPP = app;
+	</script>
+	<script type="module">
+		// import { boot } from './src/index.js';
+		// console.log(boot);
+	</script>
+</html>
