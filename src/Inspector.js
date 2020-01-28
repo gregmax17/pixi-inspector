@@ -9,9 +9,9 @@ class Inspector extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = {
-			displayObject: null
-		};
+		// this.state = {
+		// 	displayObject: null
+		// };
 
 		this.props.pixi.Ticker.shared.add(this.update, this);
 	}

@@ -18,9 +18,9 @@ const boot = (options = {}) => {
 
 export { boot };
 
-let x = setInterval(function () {
-	if (window.pixiAPP) {
-		boot({ stage: window.pixiAPP.stage });
-		clearInterval(x);
-	}
-}, 100);
+// let x = setInterval(function () {
+// 	if (window.pixiAPP) {
+// 		boot({ stage: window.pixiAPP.stage });
+// 		clearInterval(x);
+// 	}
+// }, 100);

@@ -104,13 +104,13 @@ class Properties extends React.Component {
 					<input type="text" name="scale.x" size="4" value={displayObject.scale.x} onChange={this.onChangeProperty} /> &nbsp;
 					<input type="text" name="scale.y" size="4" value={displayObject.scale.y} onChange={this.onChangeProperty} />
 				</dd>
-				{displayObject.anchor && <>
+				{displayObject.anchor && <Fragment>
 					<dt>anchor x/y</dt>
 					<dd>
 						<input type="text" name="anchor.x" size="4" value={displayObject.anchor.x} onChange={this.onChangeProperty} /> &nbsp;
 						<input type="text" name="anchor.y" size="4" value={displayObject.anchor.y} onChange={this.onChangeProperty} />
 					</dd>
-				</>}
+				</Fragment>}
 				<dt>pivot x/y</dt>
 				<dd>
 					<input type="text" name="pivot.x" size="4" value={displayObject.pivot.x} onChange={this.onChangeProperty} /> &nbsp;
